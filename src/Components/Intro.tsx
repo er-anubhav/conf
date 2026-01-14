@@ -32,13 +32,13 @@ const Intro = () => {
               </p>
             </div>
           </div>
-          {/**<div className=" lg:hidden flex items-center space-x-2 lg:justify-start justify-center">
+          <div className=" lg:hidden flex items-center space-x-2 lg:justify-start justify-center">
             <div className="text-red-800">
               <p className="font-semibold text">
-                IEEE XPLORE COMPLIANT ISBN No. <span className="mx-2"></span>
+                IEEE XPLORE COMPLIANT ISBN No. <span className="mx-2">979-8-3315-6477-3</span>
               </p>
             </div>
-          </div> */}
+          </div> 
           <p className="text-3xl lg:text-4xl font-bold ">
             2nd International Conference on Advances in Computing, Communication
             and Networking- ICAC2N
