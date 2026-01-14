@@ -7,7 +7,7 @@ const Footer = () => {
           <div className="mb-6 md:mb-0">
             <a href="" className="flex items-center">
               <div className="h-8 mr-3">
-                <img src="/Logo.jpeg" alt="Logo" className="h-9" />
+                <img src="https://res.cloudinary.com/dzgfsbzh6/image/upload/v1754138063/samples/Logo_a8pld4.jpg" alt="Logo" className="h-9" />
               </div>
               <span className="self-center text-2xl font-semibold whitespace-nowrap text-white">
                 ICAC2N-26
