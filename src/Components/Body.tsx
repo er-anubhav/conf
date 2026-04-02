@@ -164,7 +164,7 @@ const Body = () => {
                     <p className="text-sm text-gray-700 ">01/10/2025</p>
                   </div>
                   <div className="rounded-full bg-blue-800 font-semibold bg-opacity-20">
-                    <p className="px-2 py-0.5 text-xs text-blue-800">New</p>
+                    <p className="px-2 py-0.5 text-xs text-red-900">New</p>
                   </div>
                 </div>
                 <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700 " />

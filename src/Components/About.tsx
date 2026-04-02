@@ -1,9 +1,9 @@
 const About = () => {
   return (
-    <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
+    <div className="max-w-full mx-auto py-6 px-2 sm:px-6 lg:px-8">
       <div>
-        <div className="prose max-w-screen-lg mx-4">
-          <h1 className="heading border-l-4 border-red-600 pl-4 pr-4 text-tw-prose-headings font-extrabold text-2xl mb-4 leading-tight">
+        <div className="prose max-w-screen-lg mx-2 sm:mx-4">
+          <h1 className="heading border-l-4 border-red-600 pl-4 pr-4 text-tw-prose-headings text-2xl mb-4 leading-tight">
             About ITS Group of Institute
           </h1>
           <p className="text-justify mb-5 mt-5">
@@ -21,8 +21,8 @@ const About = () => {
           <p className="mt-5"></p>
         </div>
         <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
-        <div className="prose max-w-screen-lg mx-4">
-          <h1 className="heading text-tw-prose-headings font-extrabold text-2xl mb-4 leading-tight border-l-4 border-red-600 pl-4 pr-4">
+        <div className="prose max-w-screen-lg mx-2 sm:mx-4">
+          <h1 className="heading text-tw-prose-headings text-2xl mb-4 leading-tight border-l-4 border-red-600 pl-4 pr-4">
             About ITSEC
           </h1>
           <p className="text-justify mt-5 mb-5">
@@ -59,9 +59,9 @@ const About = () => {
           </p>
         </div>
         <hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
-        <div className="prose max-w-screen-lg mx-4">
-          <h1 className="heading text-tw-prose-headings font-extrabold text-2xl mb-4 leading-tight border-l-4 border-red-600 pl-4 pr-4">
-            About CSE
+        <div className="prose max-w-screen-lg mx-2 sm:mx-4">
+          <h1 className="heading text-tw-prose-headings text-2xl mb-4 leading-tight border-l-4 border-red-600 pl-4 pr-4">
+            About Department of CSE & Engineering
           </h1>
           <p className="text-justify mt-5">
             The Computer Science & Engineering Department at ITSEC offers a UG

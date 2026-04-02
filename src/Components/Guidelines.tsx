@@ -9,12 +9,12 @@ function downloadFiles() {
 }
 const Guidelines = () => {
   return (
-    <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-      <div className="prose mx-4 my-8">
-        <h1 className="heading border-l-4 border-red-600 pl-4 pr-4 text-tw-prose-headings font-extrabold text-2xl mb-4 leading-tight">
+    <div className="max-w-full mx-auto py-6 px-2 sm:px-6 lg:px-8">
+      <div className="prose max-w-screen-lg mx-2 sm:mx-4">
+        <h1 className="heading text-tw-prose-headings text-2xl mb-4 leading-tight border-l-4 border-red-600 pl-4 pr-4">
           Submission Guidelines
         </h1>
-        <p className="mb-5 mt-5">
+        <p className="text-justify mb-5 mt-5">
           Authors are solicited to contribute to the conference by submitting
           articles that illustrate research results- projects, surveying works
           and industrial experiences that describe significant advances in
@@ -72,8 +72,9 @@ const Guidelines = () => {
             New Measurement technologies and Application, Fuzzy & Neural
             Networks
           </li>
-          <p className="mt-5 mb-5">
-            Interested authors are invited to submit full papers through
+        </ul>
+        <p className="text-justify mt-5 mb-5">
+          Interested authors are invited to submit full papers through
             Microsoft CMT using the below given link. Papers will be accepted
             only by electronic submission through CMT. The authors will need to
             register their email with CMT before submitting there paper. Here is
@@ -94,8 +95,8 @@ const Guidelines = () => {
               </Link>
             </a>
           </div>
-          <p className="mt-5 mb-5">
-            Authors need to submit the full final paper (Maximum 6 pages,
+        <p className="text-justify mt-5 mb-5">
+          Authors need to submit the full final paper (Maximum 6 pages,
             double-column US letter size) as PDF using the templates. Extra
             pages beyond this would require additional page length charges. The
             additional payment required for extra pages is Rs.1000/page for
@@ -116,18 +117,18 @@ const Guidelines = () => {
               Download Conference Template
             </a>
           </div>
-          <h2 className="border-l-4 border-red-600 pl-4 pr-4 text-tw-prose-headings font-bold text-lg mt-8 mb-4 leading-relaxed">
-            Plagiarism Policy
-          </h2>
-          <p className="mb-5">
-            ICAC2N-25 takes plagiarism very seriously and regard plagiarism as a
+        <h2 className="heading text-tw-prose-headings text-2xl mb-4 leading-tight border-l-4 border-red-600 pl-4 pr-4 mt-8">
+          Plagiarism Policy
+        </h2>
+        <p className="text-justify mb-5">
+          ICAC2N-26 takes plagiarism very seriously and regard plagiarism as a
             professional misconduct. Papers will be screened for plagiarism and
             when identified the paper will be rejected.
           </p>
-          <h2 className="heading border-l-4 border-red-600 pl-4 pr-4 text-tw-prose-headings font-bold text-lg mt-8 mb-4 leading-relaxed">
-            Important Message
-          </h2>
-          <ol className="list-decimal pl-6 mb-3">
+        <h2 className="heading text-tw-prose-headings text-2xl mb-4 leading-tight border-l-4 border-red-600 pl-4 pr-4 mt-8">
+          Important Message
+        </h2>
+        <ol className="list-decimal pl-6 mb-3">
             <li className="mt-2 mb-2 pl-1">
               ICAC2N conference organizers have zero tolerance against
               plagiarism and paper formatting as per template. If author found
@@ -149,7 +150,6 @@ const Guidelines = () => {
               Registration fee once paid is non refundable.
             </li>
           </ol>
-        </ul>
       </div>
     </div>
   );

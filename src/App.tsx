@@ -1,7 +1,12 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Navigate,
+  Route,
+  Routes,
+} from "react-router-dom";
 import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
-import Home from "./Components/Home";
+import RevampedFooter from "./Components/revamped/RevampedFooter";
+import HomeRevamped from "./Components/HomeRevamped";
 import Guidelines from "./Components/Guidelines";
 import About from "./Components/About";
 import Speakers from "./Components/Speakers";
@@ -15,13 +20,14 @@ import OrganizingComittee from "./Components/OrganizingComittee ";
 import Direct from "./Components/Direct";
 import Schedule from "./Components/Schedule";
 import CmtAcknowledgement from "./Components/Cmt";
+import Gallery from "./Components/Gallery";
 
 const App = () => {
   return (
     <Router>
       <Navbar />
       <Routes>
-        <Route path="/" element={<Home />}></Route>
+        <Route path="/" element={<HomeRevamped />}></Route>
         <Route path="/schedule" element={<Schedule />}></Route>
         <Route path="/about" element={<About />}></Route>
         <Route path="/guidelines" element={<Guidelines />}></Route>
@@ -47,9 +53,12 @@ const App = () => {
         ></Route>
         <Route path="/register" element={<Register />}></Route>
         <Route path="/contact" element={<Contact />}></Route>
+        <Route path="/gallery" element={<Gallery />}></Route>
+        <Route path="/gallery/:year" element={<Gallery />}></Route>
         <Route path="/extra" element={<Direct />}></Route>
+        <Route path="*" element={<Navigate to="/" replace />}></Route>
       </Routes>
-      <Footer />
+      <RevampedFooter />
     </Router>
   );
 };

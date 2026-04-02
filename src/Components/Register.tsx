@@ -5,10 +5,10 @@ const docxFile = "https://docs.google.com/document/d/14tXiC77v7NYX2_GoxYSetHOUMX
 
 const Register = () => {
   return (
-    <div>
-      <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-        <div className="prose mx-4 my-8 w-[700px]">
-          <h1 className="heading text-tw-prose-headings font-extrabold text-2xl mt-0 mb-2 leading-tight border-l-4 border-red-600 pl-4 pr-4">
+    <div className="max-w-full mx-auto py-6 px-2 sm:px-6 lg:px-8">
+      <div className="max-w-screen-xl mx-auto px-2 sm:px-4 my-8 min-h-[calc(100vh-28.8rem)]">
+        <div className="prose max-w-screen-lg mx-2 sm:mx-4">
+          <h1 className="heading text-tw-prose-headings text-2xl mb-6 leading-tight border-l-4 border-red-600 pl-4 pr-4 text-left">
             Registration
           </h1>
           <p className="mb-5">
@@ -36,20 +36,32 @@ const Register = () => {
               </svg>
             </a>
           </div>
+          <div className="mt-5 mb-3 rounded-lg border border-red-200 bg-red-50 p-4">
+            <p className="text-sm font-medium text-red-900 mb-2">
+              Already ready with payment details?
+            </p>
+            <a
+              href="#bank-account-details"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-white bg-red-700 hover:bg-red-800 px-4 py-2 rounded-md no-underline"
+            >
+              Jump to Bank Account Details
+              <span aria-hidden="true">↓</span>
+            </a>
+          </div>
           <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700" />
-          <h2 className=" heading border-l-4 border-red-600 pl-4 pr-4 text-tw-prose-headings font-bold text-xl mb-4 leading-relaxed">
+          <h2 className="heading text-tw-prose-headings text-xl mb-4 leading-tight border-l-4 border-red-600 pl-4 pr-4 text-left">
             Registration Fee
           </h2>
           <div>
             <img
-              src="https://res.cloudinary.com/dzgfsbzh6/image/upload/v1756189379/ICAC2N-25/WhatsApp_Image_2025-08-24_at_17.47.33_s2fwn3.jpg"
-              alt=""
+              src="/Register.jpeg"
+              alt="ICAC2N registration fee table"
               className="max-w-full h-auto my-8"
             />
             <p>* Including 18% GST</p>
           </div>
           <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700" />
-          <h2 className="heading border-l-4 border-red-600 pl-4 pr-4 text-tw-prose-headings font-bold text-xl mb-4 leading-relaxed">
+          <h2 className="heading text-tw-prose-headings text-xl mb-4 leading-tight border-l-4 border-red-600 pl-4 pr-4 text-left">
             Camera Ready Format
           </h2>
           <p className="mb-5">
@@ -100,7 +112,7 @@ const Register = () => {
             </div>
           </div>
           <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700" />
-          <h2 className="heading border-l-4 border-red-600 pl-4 pr-4 text-tw-prose-headings font-bold text-xl mb-4 leading-relaxed">
+          <h2 className="heading text-tw-prose-headings text-xl mb-4 leading-tight border-l-4 border-red-600 pl-4 pr-4 text-left">
             Sample PPT Format
           </h2>
           <p className="mb-5">
@@ -131,56 +143,62 @@ const Register = () => {
             </div>
           </div>
           <hr className="h-px my-5 bg-gray-200 border-0 dark:bg-gray-700" />
-          <h2 className="heading border-l-4 border-red-600 pl-4 pr-4 text-tw-prose-headings font-bold text-xl mb-4 leading-relaxed">
-            Bank Account Details
-          </h2>
-          <p className="mb-5">
-            Here are the bank account details for the registration fee payment.
-          </p>
-          <p className="mb-5 mt-5">
-            <strong>PAYMENT MODE</strong>– NEFT / IMPS / DIRECT DEPOSIT / SWIFT
-            TRANSFER/UPI
-          </p>
-          <table className="table-auto">
-            <tbody>
-              <tr>
-                <td className="p-3">Account Number</td>
-                <td className="p-3">88953030000253</td>
-              </tr>
-              <tr>
-                <td className="p-3">Account Name</td>
-                <td className="p-3">ITS Engineering College</td>
-              </tr>
-              <tr>
-                <td className="p-3">IFSC Code</td>
-                <td className="p-3">CNRB0002807</td>
-              </tr>
-              <tr>
-                <td className="p-3">MICR Code</td>
-                <td className="p-3">110015155</td>
-              </tr>
-              <tr>
-                <td className="p-3">Swift Code</td>
-                <td className="p-3">CNRBINBBDDS BIC</td>
-              </tr>
-              <tr>
-                <td className="p-3">Bank Name</td>
-                <td className="p-3">Canara Bank</td>
-              </tr>
-              <tr>
-                <td className="p-3">Account Type</td>
-                <td className="p-3">Current Account - General</td>
-              </tr>
-              <tr>
-                <td className="p-3">Bank Address</td>
-                <td className="p-3">Noida, Greater Noida</td>
-              </tr>
-              <tr>
-                <td className="p-3">GST No.</td>
-                <td className="p-3">09AAATD0730CIZD</td>
-              </tr>
-            </tbody>
-          </table>
+          <div
+            id="bank-account-details"
+            className="scroll-mt-32 rounded-xl border border-red-200 bg-gradient-to-br from-red-50 to-white p-4 sm:p-6 shadow-sm"
+          >
+            <h2 className="heading text-tw-prose-headings text-xl mb-3 leading-tight border-l-4 border-red-600 pl-4 pr-4 text-left">
+              Bank Account Details
+            </h2>
+            <p className="mb-3 text-slate-700">
+              Use the following details for registration fee payment.
+            </p>
+            <p className="mb-4 text-sm font-semibold text-red-900 bg-red-100 border border-red-200 rounded-md px-3 py-2 inline-block">
+              PAYMENT MODE: NEFT / IMPS / DIRECT DEPOSIT / SWIFT TRANSFER / UPI
+            </p>
+            <div className="overflow-x-auto rounded-lg border border-red-200 bg-white">
+              <table className="w-full text-sm sm:text-base border-collapse">
+                <tbody>
+                  <tr className="border-b border-red-100">
+                    <td className="p-3 font-semibold text-slate-700 w-[42%] sm:w-1/3">Account Number</td>
+                    <td className="p-3 font-bold text-red-900">88953030000253</td>
+                  </tr>
+                  <tr className="border-b border-red-100 bg-red-50/40">
+                    <td className="p-3 font-semibold text-slate-700">Account Name</td>
+                    <td className="p-3 text-slate-900">ITS Engineering College</td>
+                  </tr>
+                  <tr className="border-b border-red-100">
+                    <td className="p-3 font-semibold text-slate-700">IFSC Code</td>
+                    <td className="p-3 font-bold text-red-900">CNRB0002807</td>
+                  </tr>
+                  <tr className="border-b border-red-100 bg-red-50/40">
+                    <td className="p-3 font-semibold text-slate-700">MICR Code</td>
+                    <td className="p-3 text-slate-900">110015155</td>
+                  </tr>
+                  <tr className="border-b border-red-100">
+                    <td className="p-3 font-semibold text-slate-700">Swift Code</td>
+                    <td className="p-3 text-slate-900">CNRBINBBDDS BIC</td>
+                  </tr>
+                  <tr className="border-b border-red-100 bg-red-50/40">
+                    <td className="p-3 font-semibold text-slate-700">Bank Name</td>
+                    <td className="p-3 text-slate-900">Canara Bank</td>
+                  </tr>
+                  <tr className="border-b border-red-100">
+                    <td className="p-3 font-semibold text-slate-700">Account Type</td>
+                    <td className="p-3 text-slate-900">Current Account - General</td>
+                  </tr>
+                  <tr className="border-b border-red-100 bg-red-50/40">
+                    <td className="p-3 font-semibold text-slate-700">Bank Address</td>
+                    <td className="p-3 text-slate-900">Noida, Greater Noida</td>
+                  </tr>
+                  <tr>
+                    <td className="p-3 font-semibold text-slate-700">GST No.</td>
+                    <td className="p-3 text-slate-900">09AAATD0730CIZD</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </div>

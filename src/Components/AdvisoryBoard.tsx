@@ -1,160 +1,79 @@
+const advisoryBoardMembers: string[] = [
+  "Prof. S. C. Srivastava, IIT Kanpur",
+  "Prof. J. Ram Kumar, IIT Kanpur",
+  "Prof. Vivekanand Mukherjee, ISM, Dhanbad",
+  "Prof. Fushuan Wen, China",
+  "Prof. Malay Kishore Dutta- PVC Amity University, Noida",
+  "Prof. Avadhesh Kumar -PVC, GU",
+  "Prof. Anurag Srivastava, WS University, USA",
+  "Prof. Parmanand- PVC, SU, Gr.Noida",
+  "Prof. Jai Govind, AIT, Bangkok",
+  "Prof. Brij N. Singh, North Dakota, USA",
+  "Prof. K. P. Wang, Sydney University, Australia",
+  "Prof. Istovan Erlich, DE University, Germany",
+  "Prof. L Lai, City University, London",
+  "Prof. K. N. Srivastava, ABB Sweden",
+  "Prof. Ambrish Chandra, Montreal Canada",
+  "Prof. D. S. Chauhan, Vice Chancellor, GLA University, Mathura",
+  "Prof. Bhim Singh, Chairman, IEEE Delhi Section, IITD, India",
+  "Prof. Shailesh Tiwari, ABESEC, Ghaziabad",
+  "Prof. Dilip Sharma, GLA University, Mathura",
+  "Prof. Rajiv Saxena, Jaypee University",
+  "Prof. S. S. Bhaudaria, MITS, Gwalior",
+  "Prof. N. P. Padhy, IIT Rorkee",
+  "Prof. Avadhesh Kumar, PVC, GU, Gr. Noida.",
+  "Prof. Sukumar Mishra, IIT Delhi",
+  "Prof. A. N. Tiwari, MMMTU, Gorakhpur",
+  "Prof. Asheesh Singh, MNNIT, Allahabad",
+  "Prof. S. K. Singh, IIIT, Allahabad",
+  "Prof. Neetesh Purohit, Director, SGSITS, Indore",
+  "Prof. Neelendra Badal, KNIT Sultanpur",
+  "Prof. Jawar Singh, IIITDM, Jabalpur",
+  "Prof. Mini S. Thomas, JMI, New Delhi",
+  "Prof. Shivaji Chakraborthy, JU, West Bengal",
+  "Prof. Kwang Lee, BB University, USA",
+  "Prof. Praveen Maduri, GCET, Greater Noida",
+  "Prof. Brijesh Singh, Director, GCET, Greater Noida",
+  "Prof. Lakshmanan M, GCET, Sri Eshwar College of Engineering, Tamilnadu,",
+  "Prof. Mohd Asim Qadri, GCET, Greater Noida",
+  "Prof. Rajni Saggu, GCET Greater Noida",
+  "Prof. Md. Danish Equbal, GCET, Greater Noida",
+  "Prof. A. Ambikapathy, HOD ECE, ITSEC, Greater Noida",
+  "Prof. Sansar Singh Chauhan, HOD CSE, GL Bajaj, Greater Noida",
+  "Prof. Sanjay Chauhan, HOD CSE, GNIOT, Greater Noida",
+  "Prof. Usha Chauhan, GU, Greater Noida",
+  "Prof. Sanjeev Pippal, HOD AI, GL Bajaj, Greater Noida",
+  "Prof. Ajay Shankar Singh, Sanjivani University, Maharashtra",
+  "Prof. Prashant Jhori, GU, Greater Noida",
+  "Prof. Thirunavukkarasu K, GU, Greater Noida",
+  "Prof. J N Singh, GU, Greater Noida",
+  "Prof. Rani Astya, SU, Greater Noida",
+  "Prof. Anurag Dixit, GU, Greater Noida",
+  "Prof. Nikhil Marriwala, UIET, Kurukshetra University",
+  "Prof. Sanjoy Das, IGNTU, Manipur",
+];
+
 const AdvisoryBoard = () => {
   return (
-    <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-      <div className="prose mx-4">
-        <h1 className="heading  text-prose-headings font-extrabold text-3xl mb-3 leading-tight pl-4 border-l-4 border-red-600  pr-4 text-inherit font-inherit">
-          Advisory Board
-        </h1>
-        <div>
-          <ul className="list-disc marker:text-zinc-500 mt-5 mb-5 pl-7 m-3 ">
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. S. C. Srivastava, IIT Kanpur
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">Prof. J. Ram Kumar, IIT Kanpur</li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Vivekanand Mukherjee, ISM, Dhanbad
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">Prof. Fushuan Wen, China</li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Malay Kishore Dutta, AKTU
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">Prof. Avadhesh Kumar –PVC,GU</li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Anurag Srivastava, WS University, USA
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">Prof. Parmanand, SU, Gr.Noida</li>
-            <li className="pl-1.5 mt-2 mb-2">Prof. Jai Govind, AIT, Bangkok</li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Brij N. Singh, North Dakota, USA
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. K. P. Wang, Sydney University, Australia
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Istovan Erlich, DE University, Germany
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. L Lai, City University, London
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. K. N. Srivastava, ABB Sweden
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Ambrish Chandra, Montreal Canada
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. D. S. Chauhan, Vice Chancellor, GLA University, Mathura
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Bhim Singh, Chairman, IEEE Delhi Section, IITD, India
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Shailesh Tiwari, ABESEC, Ghaziabad
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Dilip Sharma, GLA University, Mathura
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Rajiv Saxena, Jaypee University
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. S. S. Bhaudaria, MITS, Gwalior
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">Prof. N. P. Padhy, IIT Rorkee</li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Avadhesh Kumar, PVC, GU, Gr. Noida.
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Sukumar Mishra, IIT Delhi
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. A. N. Tiwari, MMMTU, Gorakhpur
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Asheesh Singh, MNNIT, Allahabad
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. S. K. Singh, IIIT, Allahabad
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Neetesh Purohit, Director, SGSITS, Indore
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Neelendra Badal, KNIT Sultanpur
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Jawar Singh, IIITDM, Jabalpur
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Mini S. Thomas, JMI, New Delhi
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Shivaji Chakraborthy, JU, West Bengal
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Kwang Lee, BB University, USA
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Praveen Maduri, GCET, Greater Noida
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Brijesh Singh, GCET, Greater Noida
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Lakshmanan M, GCET, Greater Noida
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Mohd Asim Qadri, GCET, Greater Noida
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Rajni Saggu, GCET Greater Noida
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Md. Danish Equbal, GCET, Greater Noida
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. A. Ambikapathy, GCET, Greater Noida
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Sansar Singh Chauhan, GU, Greater Noida
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Sanjay Chauhan, GU, Greater Noida
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Usha Chauhan, GU, Greater Noida
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Sanjeev Pippal, GL Bajaj, Greater Noida
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Ajay Shankar Singh, GU, Greater Noida
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Prashant Jhori, GU, Greater Noida
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Thirunavukkarasu K, GU, Greater Noida
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. J N Singh, GU, Greater Noida
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Rani Astya, SU, Greater Noida
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Anurag Dixit, GU, Greater Noida
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Nikhil Marriwala, UIET, Kurukshetra University
-            </li>
-            <li className="pl-1.5 mt-2 mb-2">
-              Prof. Sanjoy Das, IGNTU, Manipur
-            </li>
-          </ul>
+    <div className="max-w-full mx-auto py-6 px-2 sm:px-6 lg:px-8">
+      <div className="max-w-screen-xl mx-auto px-2 sm:px-4 my-8 min-h-[calc(100vh-28.8rem)]">
+        <div className="prose max-w-screen-lg mx-2 sm:mx-4">
+          <h1 className="heading text-tw-prose-headings text-2xl mb-6 leading-tight border-l-4 border-red-600 pl-4 pr-4 text-left">
+            Advisory Board
+          </h1>
+          <div>
+            <ul className="list-disc marker:text-zinc-500 mt-5 mb-5 pl-7 m-3">
+              {advisoryBoardMembers.map((member, index) => (
+                <li key={`${member}-${index}`} className="pl-1.5 mt-2 mb-2">
+                  {member}
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
   );
 };
+
 export default AdvisoryBoard;

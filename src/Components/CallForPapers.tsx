@@ -2,10 +2,10 @@ import { Link } from "react-router-dom";
 
 const CallForPapers = () => {
   return (
-    <div>
-      <div className="max-w-7xl mx-auto py-6 sm:px-6 lg:px-8">
-        <div className="prose mx-4 my-8">
-          <h1 className="heading border-l-4 border-red-600 pl-4 pr-4 text-tw-prose-headings font-extrabold text-2xl mb-4 leading-tight">
+    <div className="max-w-full mx-auto py-6 px-2 sm:px-6 lg:px-8">
+      <div className="max-w-screen-xl mx-auto px-2 sm:px-4 my-8 min-h-[calc(100vh-28.8rem)]">
+        <div className="prose max-w-screen-lg mx-2 sm:mx-4">
+          <h1 className="heading text-tw-prose-headings text-2xl mb-6 leading-tight border-l-4 border-red-600 pl-4 pr-4 text-left">
             Call for Papers
           </h1>
 
