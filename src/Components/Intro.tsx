@@ -40,7 +40,7 @@ const Intro = () => {
             </div>
           </div> 
           <p className="text-3xl lg:text-4xl font-bold ">
-            2nd International Conference on Advances in Computing, Communication
+            2nd IEEE International Conference on Advances in Computing, Communication
             and Networking- ICAC2N
           </p>
           <div className="hidden lg:flex items-center space-x-2 lg:justify-start justify-center">
