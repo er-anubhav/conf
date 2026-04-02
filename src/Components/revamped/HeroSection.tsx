@@ -70,7 +70,7 @@ const HeroSection = () => {
             <div className="flex flex-col gap-3 mb-10">
               <div className="flex items-center text-red-900 font-medium">
                   <div className="p-1 mr-2 text-red-900"><Wifi className="w-6 h-6" /></div>
-                  <p>Collaborations through networking.</p>
+                  <p>Collaborations via networking.</p>
               </div>
               <div className="flex items-center text-red-900 font-medium">
                   <div className="p-1 mr-2 text-red-900"><Laptop className="w-6 h-6" /></div>
