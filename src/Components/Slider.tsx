@@ -2,16 +2,13 @@ import "swiper/swiper-bundle.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/components/navigation/navigation.min.css";
 import "swiper/components/pagination/pagination.min.css";
-import SwiperCore from "swiper/core";
-import Navigation from "swiper/core";
-import Pagination from "swiper/core";
+import { Navigation, Pagination } from "swiper/modules";
 
-// Install Swiper components
-SwiperCore.use([Navigation, Pagination]);
 const Slider = () => {
   return (
     <div className="w-full bg-gray-100 p-4 rounded-lg">
       <Swiper
+        modules={[Navigation, Pagination]}
         navigation={{
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
